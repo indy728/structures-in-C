@@ -173,7 +173,7 @@ int		main()
 		p1->hp = tmp2;
 	}
 	if (!strcmp(p1->name, silver_knight->name))
-		printf("\x1b[32m\033[1mSUCCESS! Proceed to ex02!\x1b[0m\n");
+		printf("\x1b[32m\033[1mSUCCESS! Proceed to 01_LINKED_LISTS!!\x1b[0m\n");
 	else
 		printf("\x1b[31m\033[1mFAILURE :( Please review your code and try again.\x1b[0m\n");
 	return (0);
