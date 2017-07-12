@@ -1,0 +1,19 @@
+------------------------------------------------------------------
+
+Exercise 00:
+Defining a Struct
+
+------------------------------------------------------------------
+
+In this directory, create a file called "struct.h".
+In "struct.h" create a struct called "s_store".
+As you are creating the struct, type-define it as "t_store".
+Your struct will have two variables: an int called "price"
+and a string pointer called "goods".
+
+Run test00.sh
+If it does not compile, your struct was not properly defined
+according to the guidelines.
+If it is a success, you will know.
+
+Good luck!

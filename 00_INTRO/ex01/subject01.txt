@@ -1,0 +1,37 @@
+------------------------------------------------------------------
+
+Exercise 01:
+Changing Variable Values in a Struct
+
+------------------------------------------------------------------
+
+1)
+In this directory, create again a header file called "struct.h".
+In "struct.h" create a struct called "s_store".
+As you are creating the struct, type-define it as "t_store".
+Your struct will have three variables this time:
+- an int called "reg_price"
+- an int called "sale_price"
+- and a string pointer called "goods".
+
+2)
+Also in this directory, create a file named "struct.c".
+In "struct.c" you will create a function:
+- The function will capitalize the first byte of the
+variable "goods" contained within a struct named "item" (our
+calling function will guarantee that the first char in the 
+string is between 'a' and 'z').
+- The function will also set "sale_price" of "item" to a value
+equal to ("reg_price" - 1).
+- "reg_price" in "item" must not change.
+- Your function must be prototyped as follows:
+
+void	set_sale_item(t_store	*item);
+
+Run test01.sh
+If it does not compile or if the values in the sturct are not
+properly manipulated, your struct was not properly defined
+according to the guidelines.
+If it is a success, you will know.
+
+Good luck!
