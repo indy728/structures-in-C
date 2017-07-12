@@ -1,0 +1,54 @@
+------------------------------------------------------------------
+
+Exercise 02:
+The Arena
+
+------------------------------------------------------------------
+
+In this exercise, we will be creating RPG characters to take down
+a champion. You will create the struct that holds each
+character's attributes and our program will send them forth until
+one of them is strong enough to slay the dragon.
+
+1)
+In this directory, create once more a header file called
+"heroes.h".
+In "heroes.h" create a struct called "s_hero".
+As you are creating the struct, type-define it as "t_hero".
+Your struct must have the following variables:
+- a string pointer called "name".
+- an int called "hp".
+- an int called "attack".
+- an int called "speed".
+- a char called "alive".
+
+Note: we use the char as a BOOLEAN variable to determine whether 
+an hero is still alive.
+
+2)
+Also in this directory, create a file named "arena.c".
+In "arena.c" you will create a function prototyped as follows:
+
+void	battle(t_hero *champion, t_hero	*challenger);
+
+- Initalize two t_hero pointers: *p1 and *p2.
+- Point p1 to either the Challenger or the Champion, depending
+on whichever has the greater "speed" attribute. p2 points to the
+other hero.
+- p1 attacks first, which means that you must decrement "hp" of
+p2 by the "attack" value of p1.
+- p2 attacks second, so decrement the "hp" of p1 accordingly.
+- A hero is killed when their "hp" <= 0
+- RULE: p2 does not get to attack if this hero has "hp" <= 0.
+- When a hero is killed, you must set its "alive" char to 0.
+
+Our program will run a series of Champions and Challengers to
+see who will be the final victor in our gladiator arena.
+
+Run test02.sh
+If it does not compile or if the values in the sturct are not
+properly manipulated, your struct was not properly defined
+according to the guidelines.
+If it is a success, you will know.
+
+Good luck!
