@@ -28,5 +28,9 @@ int		main()
 		printf("\x1b[32m\033[1mSUCCESS! Proceed to ex02!\x1b[0m\n");
 	else
 		printf("\x1b[31m\033[1mFAILURE :( Please review your code and try again.\x1b[0m\n");
+	free(item1->goods);
+	free(item1);
+	free(item2->goods);
+	free(item2);
 	return (0);
 }
